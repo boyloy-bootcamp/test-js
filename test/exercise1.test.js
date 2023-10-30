@@ -4,8 +4,8 @@ test("swapping variables a and b", () => {
   let a = 5;
   let b = 10;
 
-  variableManipulation(a, b);
+  let result = variableManipulation(a, b);
 
-  expect(a).toBe(10);
-  expect(b).toBe(5);
+  expect(result[0]).toBe(10);
+  expect(result[1]).toBe(5);
 });
